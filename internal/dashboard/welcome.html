@@ -152,7 +152,7 @@ launchctl bootout gui/$(id -u)/com.enmaas.codex-env 2&gt;/dev/null || true
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.enmaas.codex-env.plist
 [[ -n "$(launchctl getenv ENMAAS_KEY)" ]] &amp;&amp; echo "key available"</pre></div>
         <h4 class="setup-heading">2. Add the model catalog</h4>
-        <p class="setup-copy">Save as <code>~/.codex/models.json</code>. DeepSeek V4.1 Flash, GLM 5.3, and GPT-5.6 Luna are enough to start; add more below. Both hosted entries declare a 1M-token context window (<code>context_window</code> and <code>max_context_window</code> set to <code>1048576</code>).</p>
+        <p class="setup-copy">Save as <code>~/.codex/models.json</code>. DeepSeek V4.1 Flash, GLM 5.3, and GPT-5.6 Luna are enough to start; add more below. The DeepSeek entry declares a 1M-token context window (<code>context_window</code> and <code>max_context_window</code> set to <code>1048576</code>); the GLM entry uses <code>1000000</code>.</p>
         <div class="code"><button class="copy">copy</button><pre>{
   "models": [
     {

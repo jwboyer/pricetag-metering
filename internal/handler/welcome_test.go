@@ -63,7 +63,7 @@ func TestServeWelcomeSubstitution(t *testing.T) {
 		`"name": "rits/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "context_limit": 1048576,`,
 		"DeepSeek V4.1 Flash has a 1,000,000-token context window.",
-		"Both hosted entries declare a 1M-token context window",
+		"The DeepSeek entry declares a 1M-token context window",
 		"DeepSeek has its own <strong>1,000,000-token context window</strong>",
 		`"description": "Hosted via EnMaaS · 1M-token context"`,
 		"DeepSeek image input",
